@@ -105,8 +105,13 @@ class App extends Component {
       }
     ]
   };
+
   render() {
-    return <div className="App">Learn React</div>;
+    return (
+      <div>
+        <ListPlaces places={this.state.places} />
+      </div>
+    );
   }
 }
 
