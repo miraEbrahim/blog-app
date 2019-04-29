@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ListPlaces from './ListPlaces';
+import MapPlaces from './components/MapPlaces';
 import './App.css';
 
 class App extends Component {
@@ -110,6 +111,7 @@ class App extends Component {
     return (
       <div>
         <ListPlaces places={this.state.places} />
+        <MapPlaces />
       </div>
     );
   }
